@@ -1,0 +1,16 @@
+.sidebar {
+  width: 30%;
+  height:100%;
+  background-color: #BDBDBD;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sw-logo {
+  background-image: url("../../assets/images/img_star_wars_logo.svg");
+  width: 40%;
+  height: 25%;
+  background-size: cover;
+  border-radius: 4px;
+}
