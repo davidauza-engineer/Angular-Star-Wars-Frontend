@@ -2,4 +2,6 @@
     display: inline-block;
     width: 70vw;
     height: 100px;
+    position: absolute;
+    top: 150px;
 }

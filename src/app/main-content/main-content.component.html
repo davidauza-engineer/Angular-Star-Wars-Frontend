@@ -1,12 +1,22 @@
-<!--div class="d-inline-block mx-auto">
-</div-->
-
 <div class="contenedor-buscador">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Ingresa el nombre de la película que quieres buscar..." aria-label="I with two button addons" aria-describedby="button-addon4">
-        <div class="input-group-append" id="button-addon4">
-          <button class="btn btn-outline-secondary" type="button">Button</button>
-          <button class="btn btn-outline-secondary" type="button">Button</button>
+    <div class="input-group d-flex justify-content-center">
+        <div class="w-75 d-flex">
+            <input type="text" class="form-control " placeholder="Ingresa el nombre de la película que quieres buscar o el año de su lanzamiento..." aria-label="I with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <div class="input-group">  
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary dropdown-toggle bg-primary text-white border-dark" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Año
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#!">Año 1</a>
+                      <a class="dropdown-item" href="#!">Año 2</a>
+                      <a class="dropdown-item" href="#!">Año 3</a>
+                      <a class="dropdown-item" href="#!">Año 4</a>
+                    </div>
+                </div>      
+            </div>
+            <button class="btn btn-outline-secondary bg-primary text-white border-dark" type="button">Buscar</button>
         </div>
     </div> 
 </div>
