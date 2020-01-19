@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { MovieGridComponent } from './movie-grid/movie-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    MainContentComponent
+    MainContentComponent,
+    MovieGridComponent
   ],
   imports: [
     BrowserModule,
