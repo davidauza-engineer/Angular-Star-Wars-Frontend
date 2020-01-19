@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { MovieGridComponent } from './movie-grid/movie-grid.component';
+import { MovieComponent } from './movie/movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     MainContentComponent,
-    MovieGridComponent
+    MovieGridComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
