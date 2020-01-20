@@ -12,4 +12,13 @@ export class MovieComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick() {
+    let gridPeliculas;
+    gridPeliculas = document.getElementById('grid-peliculas');
+    gridPeliculas.classList.add('d-none');
+    let detallePelicula;
+    detallePelicula = document.getElementById('detalle-pelicula');
+    detallePelicula.classList.remove('d-none');
+  }
+
 }
