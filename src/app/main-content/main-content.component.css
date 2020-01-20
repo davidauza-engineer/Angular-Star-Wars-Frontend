@@ -1,0 +1,8 @@
+.contenedor-buscador{
+    width: calc(100% - 15px);
+    height: calc(100% - 150px);
+}
+
+.barra-busqueda {
+  margin-top: 150px;
+}
