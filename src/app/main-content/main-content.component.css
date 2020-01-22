@@ -4,5 +4,11 @@
 }
 
 .barra-busqueda {
-  margin-top: 150px;
+  margin-top: 75px;
+}
+
+@media (min-width: 576px) {
+  .barra-busqueda {
+    margin-top: 150px;
+  }
 }

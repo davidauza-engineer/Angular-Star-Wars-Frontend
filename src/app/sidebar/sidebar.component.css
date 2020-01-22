@@ -4,14 +4,3 @@
   background-color: rgba(189, 189, 189, .60);
 }
 
-.sw-logo {
-  background-image: url("../../assets/images/img_star_wars_logo.svg");
-  width: 250px;
-  height: 250px;
-  background-size: cover;
-  border-radius: 4px;
-}
-
-.sw-container{
-  width: 100%;
-}

@@ -1,8 +1,9 @@
 <div class="contenedor-buscador">
+  <app-main-title></app-main-title>
   <div class="input-group d-flex justify-content-center barra-busqueda">
     <div class="w-75 d-flex">
-      <input type="text" class="form-control "
-             placeholder="Busca por nombre de la película o año de lanzamiento..."
+      <input type="text" class="form-control"
+             placeholder="Ingresa nombre o año..."
              aria-label="I with two button addons"
              aria-describedby="button-addon4">
       <div class="input-group-append" id="button-addon4">
@@ -22,11 +23,11 @@
             </div>
           </div>
         </div>
-        <button
-          class="btn btn-outline-secondary bg-primary text-white border-dark"
-          type="button">Buscar
-        </button>
       </div>
+      <button
+        class="btn btn-outline-secondary bg-primary text-white border-dark"
+        type="button">Buscar
+      </button>
     </div>
   </div>
   <app-movie-grid id="grid-peliculas"></app-movie-grid>
