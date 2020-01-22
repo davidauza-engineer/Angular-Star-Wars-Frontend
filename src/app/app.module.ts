@@ -8,6 +8,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { MovieGridComponent } from './movie-grid/movie-grid.component';
 import { MovieComponent } from './movie/movie.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { MainTitleComponent } from './main-title/main-title.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     MainContentComponent,
     MovieGridComponent,
     MovieComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    MainTitleComponent
   ],
   imports: [
     BrowserModule,
