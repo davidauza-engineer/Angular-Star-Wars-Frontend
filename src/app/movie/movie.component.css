@@ -1,3 +1,7 @@
 .tarjeta {
   background-color: rgba(189, 189, 189, 0.6);
 }
+
+.sw-image {
+  background-image: url("../../assets/images/img_star_wars_logo.svg");
+}
