@@ -9,6 +9,6 @@ export class ApiService {
   constructor(private httpClient: HttpClient) { }
 
   public getMovies() {
-    return this.httpClient.get(`https://swapi.co/api/films`);
+    return this.httpClient.get(`https://swapi.co/api/films/`);
   }
 }
