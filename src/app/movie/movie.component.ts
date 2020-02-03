@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-movie',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent implements OnInit {
-
   constructor() { }
 
+  @Input() pelicula;
+
   ngOnInit() {
+    console.log(this.pelicula); // TODO remover en producción
   }
 
   onClick() {
