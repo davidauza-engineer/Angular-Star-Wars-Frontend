@@ -9,14 +9,35 @@
 
 .card-body{
   height: 270px;
-  overflow: hidden;
 }
 
-.height{
-  height: 15px;
-}
+
 
 .top{
   top: 517px;
-  position : absolute;
+  /*position : absolute;*/
 }
+
+@media (max-width: 574px) {
+  .top{
+    z-index: 99;
+    position: relative;
+    top: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 825px) {
+  .card{
+    height: 581px;
+  }
+
+  .top{
+    z-index: 99;
+    position: absolute;
+    top: 520px;
+  }
+  
+}
+
+
+
