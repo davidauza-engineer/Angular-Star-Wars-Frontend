@@ -12,7 +12,6 @@ export class MovieComponent implements OnInit {
   @Input() pelicula;
 
   ngOnInit() {
-    console.log(this.pelicula); // TODO remover en producción
   }
 
   onClick() {
