@@ -14,7 +14,7 @@ export class MovieGridComponent implements OnInit {
 
   ngOnInit() {
     this.apiService.getMovies().subscribe((data) => {
-      console.log(data);
+      console.log(data); // TODO remover en producción
       this.movies = data['results'];
     });
   }
