@@ -5,3 +5,8 @@
 .sw-image {
   background-image: url("../../assets/images/img_star_wars_logo.svg");
 }
+
+.card-body{
+  height: 270px;
+  overflow: hidden;
+}
