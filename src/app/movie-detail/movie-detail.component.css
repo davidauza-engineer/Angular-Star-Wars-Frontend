@@ -1,3 +1,19 @@
 .tarjeta {
-  width: 35%;
+  width: 75%;
+}
+
+.contenedor-movie-detail {
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .tarjeta {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .tarjeta {
+    width: 35%;
+  }
 }
