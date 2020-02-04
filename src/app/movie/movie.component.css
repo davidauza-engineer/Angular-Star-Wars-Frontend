@@ -39,6 +39,18 @@
   
 }
 
+@media (min-width: 1200px) and (max-width: 1870px) {
+  .card{
+    height: 630px;
+  }
+
+  .top{
+    z-index: 99;
+    position: absolute;
+    top: 560px;
+  }
+  
+}
 
 
 
