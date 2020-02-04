@@ -6,7 +6,17 @@
   background-image: url("../../assets/images/img_star_wars_logo.svg");
 }
 
+
 .card-body{
   height: 270px;
   overflow: hidden;
+}
+
+.height{
+  height: 15px;
+}
+
+.top{
+  top: 517px;
+  position : absolute;
 }
