@@ -52,6 +52,12 @@
   
 }
 
+@media (min-width:1871px){
+  .card{
+    height: 640px;
+  }
+}
+
 
 
 
