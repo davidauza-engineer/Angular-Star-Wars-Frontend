@@ -11,6 +11,16 @@
   max-height: 38px;
 }
 
+.componente-detail {
+  width: 75%;
+}
+
+@media (min-width: 768px) {
+  .componente-detail {
+    width: 50%;
+  }
+}
+
 @media (min-width: 992px) {
   .contenedor-principal {
     margin-top: 150px;
