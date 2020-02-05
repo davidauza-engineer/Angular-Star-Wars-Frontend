@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {MovieDetailComponent} from '../movie-detail/movie-detail.component';
 
 @Component({
   selector: 'app-movie',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent implements OnInit {
-
   constructor() { }
+
+  @Input() pelicula;
 
   ngOnInit() {
   }
@@ -19,6 +21,7 @@ export class MovieComponent implements OnInit {
     let detallePelicula;
     detallePelicula = document.getElementById('detalle-pelicula');
     detallePelicula.classList.remove('d-none');
+    MovieDetailComponent.actualizarContenido(this.pelicula);
   }
 
 }

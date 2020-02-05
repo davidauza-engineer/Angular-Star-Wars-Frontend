@@ -1,8 +1,10 @@
 <div class="card mt-3 mx-2 tarjeta">
-  <img class="card-img-top sw-image" src="assets/images/img_star_wars_logo.svg" alt="Película Star Wars">
+  <img class="card-img-top sw-image" src="assets/images/img_star_wars_logo.svg"
+       alt="Película Star Wars">
   <div class="card-body">
-    <h5 class="card-title text-white">Título Película</h5>
-    <p class="card-text text-white">Pequeña descripción película...</p>
-    <a href="#!" class="btn btn-primary" (click)="onClick()">Ampliar Detalles</a>
+    <h5 class="card-title text-white">{{ pelicula.title }}</h5>
+    <p class="card-text text-white ">{{ (pelicula.opening_crawl).slice(0,200) + "..." }}</p>
+    <a href="#!" class="btn btn-primary top" (click)="onClick()">Ampliar
+      Detalles</a>
   </div>
 </div>
