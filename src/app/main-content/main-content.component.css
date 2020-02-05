@@ -3,12 +3,26 @@
   height: calc(100% - 150px);
 }
 
-.barra-busqueda {
+.contenedor-principal {
   margin-top: 75px;
 }
 
+.barra-busqueda {
+  max-height: 38px;
+}
+
+.componente-detail {
+  width: 75%;
+}
+
+@media (min-width: 768px) {
+  .componente-detail {
+    width: 50%;
+  }
+}
+
 @media (min-width: 992px) {
-  .barra-busqueda {
+  .contenedor-principal {
     margin-top: 150px;
   }
 }

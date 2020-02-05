@@ -1,35 +1,29 @@
 <div class="contenedor-buscador">
   <app-main-title class="d-lg-none"></app-main-title>
-  <div class="input-group d-flex justify-content-center barra-busqueda">
-    <div class="w-75 d-flex">
-      <input type="text" class="form-control"
-             placeholder="Ingresa nombre o año..."
-             aria-label="I with two button addons"
-             aria-describedby="button-addon4">
-      <div class="input-group-append" id="button-addon4">
-        <div class="input-group">
-          <div class="input-group-append">
-            <button
-              class="btn btn-outline-secondary dropdown-toggle bg-primary text-white border-dark"
-              type="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Año
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#!">Año 1</a>
-              <a class="dropdown-item" href="#!">Año 2</a>
-              <a class="dropdown-item" href="#!">Año 3</a>
-              <a class="dropdown-item" href="#!">Año 4</a>
-            </div>
-          </div>
+  <div class="input-group d-flex justify-content-center contenedor-principal">
+    <!-- Inicio barra de búsqueda -->
+    <div class="w-75 d-flex barra-busqueda">
+      <div class="btn-group flex-grow-1">
+        <button type="button" class="btn btn-light dropdown-toggle"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+          Busca por título y año
+        </button>
+        <div class="dropdown-menu w-100">
+          <a *ngFor="let pelicula of peliculas" class="dropdown-item"
+             href="#">{{ pelicula.title }}
+            - {{ extraerAnio(pelicula.release_date) }}</a>
         </div>
       </div>
       <button
-        class="btn btn-outline-secondary bg-primary text-white border-dark"
+        class="btn btn-outline-secondary bg-primary text-white border-dark w-25"
         type="button">Buscar
       </button>
     </div>
+    <!-- Fin barra de búsqueda -->
+    <app-movie-grid id="grid-peliculas"></app-movie-grid>
+    <div class="componente-detail">
+      <app-movie-detail id="detalle-pelicula" class="d-none"></app-movie-detail>
+    </div>
   </div>
-  <app-movie-grid id="grid-peliculas"></app-movie-grid>
-  <app-movie-detail id="detalle-pelicula" class="d-none"></app-movie-detail>
 </div>

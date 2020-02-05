@@ -5,3 +5,54 @@
 .sw-image {
   background-image: url("../../assets/images/img_star_wars_logo.svg");
 }
+
+.card-body{
+  height: 270px;
+}
+
+.top{
+  top: 517px;
+}
+
+@media (max-width: 574px) {
+  .top{
+    z-index: 99;
+    position: relative;
+    top: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+  .card{
+    height: 581px;
+  }
+
+  .top{
+    z-index: 99;
+    position: absolute;
+    top: 530px;
+  }  
+}
+
+@media (min-width: 1200px) and (max-width: 1870px) {
+  .card{
+    height: 630px;
+  }
+
+  .top{
+    z-index: 99;
+    position: absolute;
+    top: 540px;
+  }  
+}
+
+@media (min-width:1871px){
+  .card{
+    height: 630px;
+  }
+  .top{
+    z-index: 99;
+    position: absolute;
+    top: 560px;
+  }  
+}
